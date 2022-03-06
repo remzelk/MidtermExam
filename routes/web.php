@@ -14,6 +14,6 @@ use App\Http\Controllers;
 */
 
 
+Route::get('/Employees/{mm}/{dd}/{yyyy}', 'EmployeesController@bday');
 Route::resource('/Employees', EmployeesController::class);
-
 

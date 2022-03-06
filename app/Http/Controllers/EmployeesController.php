@@ -79,6 +79,9 @@ class EmployeesController extends Controller
         $this->EmployeeId[$id] -> delete();
         return view('Employees.store', ['Employee'=>$this->EmployeeId]);
     }
-    
-   
-}
+    public function bday($mm, $dd, $yyyy)
+    {
+        $date = date('Y/m/d', mktime(0,0,0,$mm,$dd,$yyyy));
+        return view('Employees.birthday', ['Employee'=>$this->EmployeeId], ['date'=>$date]);
+    }
+} 
