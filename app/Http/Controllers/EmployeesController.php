@@ -20,6 +20,13 @@ class EmployeesController extends Controller
             'LastName' => 'Medina',
             'Birthday' => '2000/06/05',
             'Gender' => 'Male'
+        ],
+        3 => [
+            'EmployeeNumber' => 4180066,
+            'FirstName' => 'Jessie James',
+            'LastName' => 'Jaime',
+            'Birthday' => '1999/11/02',
+            'Gender' => 'Male'
         ]
     ];
     public function index()
